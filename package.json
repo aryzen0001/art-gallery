@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "parcel --dist-dir dev src/index.html",
-    "build": "parcel build --public-url ./ src/index.html",
+    "build": "parcel build --no-optimize --public-url ./ src/index.html",
     "help": "parcel build --help"
   },
   "keywords": [],

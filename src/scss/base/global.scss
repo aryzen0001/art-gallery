@@ -9,6 +9,8 @@ body {
     font-weight: $fw-300;
     line-height: $lh-28_18;
 
+    background-color:  red;
+
     @media(width>=1100px) {
         font-size: $fs-22;
         line-height: $lh-32_22;

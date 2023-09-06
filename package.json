@@ -9,15 +9,14 @@
   ],
   "scripts": {
     "dev": "parcel --dist-dir dev src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build --public-url ./ src/index.html",
     "help": "parcel build --help"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3",
-    "sass": "^1.66.1"
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
   }
-  
 }

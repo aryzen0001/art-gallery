@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+/* Global */
+
+body {
+    font-family: $ff-BigShouldersDisplay, sans-serif;
+    color: $White;
+    font-size: $fs-18;
+    font-weight: $fw-300;
+    line-height: $lh-28_18;
+
+    @media(width>=1100px) {
+        font-size: $fs-22;
+        line-height: $lh-32_22;
+    }
+}
+
+h1 {
+    color: $EerieBlack;
+    font-size: $fs-60;
+    font-weight: $fw-900;
+    line-height: $lh-55_60;
+    text-transform: uppercase;
+
+    @media(width>=768px) {
+        font-size: $fs-70;
+        line-height: $lh-65_70;
+    }
+
+    @media(width>=1110px) {
+        color: $White;
+        font-size: $fs-96;
+        line-height: $lh-88_96;
+        mix-blend-mode: exclusion;
+    }
+}
+
+h2 {
+    font-size: $fs-50;
+    font-weight: $fw-900;
+    line-height: $lh-45_50;
+    text-transform: uppercase;
+
+    @media(width>=1110px) {
+        font-size: $fs-60;
+        line-height: $lh-60_60;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+p {
+    font-family: $ff-Outfit, sans-serif;
+}

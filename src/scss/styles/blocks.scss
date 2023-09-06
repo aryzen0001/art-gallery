@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+
+/* Blocks */
+
+.mask {
+    background-color: $EerieBlack;
+}
+
+.call-to-action p {
+    color: $Tundora;
+}
+
+.gallery-info h2 {
+    color: $EerieBlack;
+}
+
+.gallery-info p {
+    color: $Tundora;
+}
+
+.gallery-greeting {
+    background-color: $EerieBlack;
+}
+
+.home-footer {
+    background-color: $EerieBlack;
+}
+
+.home-footer p {
+    font-size: $fs-16;
+    line-height: $lh-26_16;
+
+    @media(width>=$Desktop) {
+        font-size: $fs-18;
+        line-height: $lh-28_18;
+    }
+}
+
+.location {
+    background-color: $EerieBlack;
+}
+
+.location h2 {
+    font-size: $fs-55;
+    line-height: $lh-50_55;
+
+    @media(width>$Desktop) {
+        font-size: $fs-70;
+        line-height: $lh-70_70;
+    }
+}
+
+.street {
+    font-family: $ff-BigShouldersDisplay;
+    color: $Whiskey;
+    font-size: $fs-32;
+    font-weight: $fw-900;
+    line-height: $lh-32_32;
+    text-transform: uppercase;
+
+    @media(width>=110px) {
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
+
+.location-footer {
+    background-color: $Whiskey;
+}
+
+.location-footer .logo {
+    fill: $EerieBlack;
+}
+
+.location-footer p {
+    color: $EerieBlack;
+    font-size: $fs-16;
+    line-height: $lh-26_16;
+
+    @media(width>=$Desktop) {
+        font-size: $fs-18;
+        line-height: $lh-28_18;
+    }
+}
+
+.location-footer img path {
+    color: $EerieBlack;
+}

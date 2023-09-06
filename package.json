@@ -1,0 +1,23 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ],
+  "scripts": {
+    "dev": "parcel --dist-dir dev src/index.html",
+    "build": "parcel build src/index.html",
+    "help": "parcel build --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "sass": "^1.66.1"
+  }
+  
+}

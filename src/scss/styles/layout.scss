@@ -1,0 +1,280 @@
+@use "../abstracts/" as *;
+
+/* Layout */
+
+body {
+    max-width: rem(1445);
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper {
+    max-width: rem(343);
+    margin: 0 auto;
+
+    @media(width>=$Tablet) {
+        max-width: initial;
+        margin: 0;
+    }
+}
+
+header {
+    margin-bottom: rem(120);
+
+    @media(width>=$Tablet) {
+        height: rem(700);
+        margin-bottom: rem(180);
+    }
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+
+    @media(width>=$Desktop) {
+        left: rem(450);
+    }
+}
+
+.mask-outer {
+    height: rem(240);
+    margin-bottom: rem(32);
+    position: relative;
+    z-index: -2;
+
+    @media(width>=$Tablet) {
+        width: rem(389);
+        height: rem(700);
+        margin: 0;
+        position: relative;
+        z-index: -1;
+    }
+
+    @media(width>=$Desktop) {
+        display: none;
+    }
+}
+
+.mask-inner {
+    display: none;
+
+    @media(width>=$Desktop) {
+        display:initial;
+        width: rem(450);
+        height: rem(799);
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.header-flex-outer {
+
+    @media(width>=$Tablet) {
+        display: flex;
+    }
+
+}
+
+.header-flex-inner {
+
+    @media(width>=$Tablet) {
+        margin-top: rem(145);
+    }
+
+    @media(width>=$Desktop) {
+        margin-left: rem(165);
+        display: flex;
+        gap: rem(246);
+    }
+}
+
+.title {
+    margin-bottom: rem(32);
+
+    @media(width>=$Tablet) {
+        margin-bottom: rem(48);
+    }
+    @media(width>=$Desktop) {
+        width: rem(514);
+    }
+}
+
+.call-to-action p {
+    margin-bottom: rem(32);
+
+    @media(width>=$Tablet) {
+        max-width: rem(340);
+        margin-bottom: rem(48);
+    }
+    @media(width>=$Desktop) {
+        max-width: rem(350);
+    }
+}
+
+
+.main-grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: rem(16);
+
+    @media(width>=$Tablet) {
+        max-width: rem(689);
+        height: rem(1131);
+        margin: 0 auto rem(120) auto;
+
+        grid-template-columns: 280fr 107fr 280fr;
+        grid-template-rows: 400fr 313fr 396fr;
+        gap: rem(11);
+    }
+
+    @media(width>=$Desktop) {
+        max-width: rem(1110);
+        height: rem(1150);
+        margin: 0 auto rem(180) auto;
+
+        grid-template-columns: 445fr 160fr 445fr;
+        grid-template-rows: 400fr 313fr 377fr;
+        gap: rem(30);
+    }
+}
+
+.gallery-info {
+    max-width: rem(343);
+    margin-bottom: rem(16);
+    align-self: center;
+
+    @media(width>=$Tablet) {
+        max-width: rem(223);
+        margin-bottom: 0;
+    }
+
+    @media(width>=$Desktop) {
+        max-width: rem(350);
+    }
+}
+
+.gallery-info h2 {
+    margin-bottom: rem(21);
+
+    @media(width>=$Tablet) {
+        margin-bottom: rem(24);
+    }
+    @media(width>=$Desktop) {
+        margin-bottom: rem(32);
+    }
+}
+
+.pic-1 {
+    margin-bottom: rem(20);
+    grid-row: 1;
+
+    @media(width>=$Tablet) {
+        margin-bottom: 0;
+        grid-row: initial;
+        grid-column: 2/4;
+    }
+}
+
+.pic-2 {
+
+    @media(width>=$Tablet) {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+}
+
+.gallery-greeting {
+    margin-bottom: rem(120);
+    padding: rem(48) rem(24) rem(47) rem(24);
+
+    @media(width>=$Tablet) {
+        margin-bottom: 0;
+        padding: rem(85) rem(28) rem(85) rem(29);
+        grid-row: 3/4;
+    }
+    @media(width>=$Desktop) {
+        padding: rem(65) rem(47) rem(64) rem(48);
+    }
+}
+
+.gallery-greeting h2 {
+    margin-bottom: rem(24);
+
+    @media(width>=$Desktop) {
+        margin-bottom: rem(32);
+    }
+}
+
+.location-btn {
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media(width>=$Tablet) {
+        left: rem(39);
+    }
+
+    @media(width>=$Desktop) {
+        left: rem(156);
+    }
+}
+
+.location {
+    padding: rem(48) rem(16) rem(56) rem(16);
+
+    @media(width>=$Tablet) {
+        padding: rem(88) rem(40) rem(80) rem(39);
+    }
+
+    @media(width>=$Desktop) {
+        padding: rem(104) rem(165) rem(128) rem(165);
+    }
+}
+
+.location-flex {
+    max-width: rem(343);
+    margin: 0 auto;
+
+    @media(width>=$Tablet) {
+        max-width: rem(689);
+        display: flex;
+        gap: rem(68);
+    }
+
+    @media(width>=$Desktop) {
+        max-width: rem(1110);
+        gap: rem(220);
+    }
+}
+
+.location h2 {
+    margin-bottom: rem(48);
+
+    @media(width>=$Tablet) {
+        margin-bottom: 0;
+        width: rem(223);
+    }
+
+    @media(width>=$Desktop) {
+        width: rem(350);
+    }
+}
+
+.address {
+    max-width: rem(398);
+}
+
+.street {
+    margin-bottom: rem(20);
+}
+
+.state {
+    margin-bottom: rem(20);
+}
+

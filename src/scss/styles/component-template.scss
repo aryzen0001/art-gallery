@@ -1,0 +1,117 @@
+@use "../abstracts" as *;
+
+/* Component Template */
+
+.btn {
+    display: flex;
+    width: max-content;
+    text-decoration: none;
+
+    &:hover {
+        & .text {
+            background-color: $Whiskey;
+            transition: all .4s ease-in-out;
+        }
+
+        & .icon-arrow {
+            background-color: $EerieBlack;
+            transition: all .4s ease-in-out;
+        }
+    }
+
+    & .text {
+        width: rem(204);
+        padding: rem(24) rem(35) rem(24) rem(32);
+        background-color: $EerieBlack;
+        color: $White;
+        font-size: $fs-20;
+        font-weight: $fw-800;
+        line-height: $lh-24_20;
+        letter-spacing: rem(3.636363);
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    & .icon-arrow {
+        display: grid;
+        place-items: center;
+        width: rem(56);
+        background-color: $Whiskey;
+
+        & img {
+            width: initial;
+        }
+    }
+}
+
+footer {
+    padding: rem(48) rem(32) rem(48) rem(32);
+
+    @media(width>=$Desktop) {
+        padding: rem(80) rem(165);
+    }
+
+    .footer-flex-outer {
+        max-width: rem(311);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: rem(38);
+
+        @media(width>=$Tablet) {
+            max-width: rem(689);
+            flex-direction: row;
+            gap: rem(133);
+        }
+
+        @media(width>=$Desktop) {
+            max-width: rem(1110);
+            flex-direction: row;
+            gap: rem(280);
+        }
+
+        .footer-flex-inner {
+            display: flex;
+            flex-direction: column;
+            gap: rem(38);
+
+
+            .logo {
+                max-width: rem(110);
+            }
+
+
+            @media(width>=$Tablet) {
+                flex-direction: row;
+                gap: rem(64.95);
+
+                p {
+                    max-width: rem(281);
+                }
+            }
+
+            @media(width>=$Desktop) {
+                flex-direction: row;
+                gap: rem(140.43);
+
+                p {
+                    max-width: rem(430);
+                }
+            }
+
+        }
+
+        .logo {
+            align-self: baseline;
+        }
+
+        .socials-flex {
+            width: rem(100);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+
+}

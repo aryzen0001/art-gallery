@@ -1,0 +1,6 @@
+@use "sass:math";
+
+// Source: https://css-tricks.com/snippets/sass/px-to-em-functions/
+@function lh-unitless($lh-pixels, $fs) {
+  @return (math.div($lh-pixels, $fs));
+}
